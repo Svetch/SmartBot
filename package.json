@@ -1,0 +1,32 @@
+{
+  "name": "svetchbot",
+  "version": "1.0.0",
+  "description": "Custom bot for Svetch",
+  "main": "index.ts",
+  "scripts": {
+    "start": "nodemon index.ts",
+    "test": "eslint ./"
+  },
+  "author": "Svetch",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.3.1",
+    "dotenv": "^8.2.0",
+    "fs": "0.0.1-security",
+    "mongoose": "^5.10.3",
+    "typescript": "^4.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^14.11.2",
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^4.2.0",
+    "eslint": "^7.9.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  }
+}
