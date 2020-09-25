@@ -1,10 +1,15 @@
-import mongoose from 'mongoose';
-
-const PrefixSchema = new mongoose.Schema({
+import { Document, Model, model, Types, Schema, Query } from "mongoose";
+export interface IPrefixSound extends Document {
     Prefix: {
         type: String
     },
     GuildID: String
+};
+
+export const PrefixSchema = new Schema({
+    Prefix: String,
+    GuildID: String
 });
 
-export default mongoose.model('prefixes', PrefixSchema);
+const Sound: model<IPrefixSound> = model<IPrefixSound>('prefixes', PrefixSchema);
+export default Sound;

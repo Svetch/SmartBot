@@ -6,7 +6,7 @@ export default class Bot{
         this.client = new Client(options);
         this.commands = new Collection<string, CommandModel>();
         this.aliases = new Collection<string, string>();
-        this.prefix = !env.BOT_PREFIX_SENSITIVE ? env.bot_prefix.toLowerCase() : env.bot_prefix;
+        this.prefix = !env.BOT_COMMAND_SENSITIVE ? env.bot_prefix.toLowerCase() : env.bot_prefix;
     }
     commands: Collection<string, CommandModel>;
     aliases: Collection<string, string>;
